@@ -9,12 +9,20 @@ import { share } from 'rxjs';
 import { SharedModule } from './shared/shared.module';
 import { GifsModule } from './gifs/gifs.module';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './log/login/login.component';
+import { RecuperarPasswordComponent } from './log/recuperar-password/recuperar-password.component';
+import { RegistrarUsuarioComponent } from './log/registrar-usuario/registrar-usuario.component';
+import { VerificarUsuarioComponent } from './log/verificar-usuario/verificar-usuario.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    LoginComponent,
+    RecuperarPasswordComponent,
+    RegistrarUsuarioComponent,
+    VerificarUsuarioComponent,
   ],
   imports: [
     BrowserModule,
