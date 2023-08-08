@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+//componentes
 import { HttpClientModule } from '@angular/common/http'
-
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
+//componentes
 import { AppComponent } from './app.component';
 import { share } from 'rxjs';
 import { SharedModule } from './shared/shared.module';
@@ -20,6 +23,7 @@ import { LoginModule } from './log/login.module';
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     SharedModule,
     LoginModule,
