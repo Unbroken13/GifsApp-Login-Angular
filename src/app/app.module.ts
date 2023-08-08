@@ -9,6 +9,7 @@ import { share } from 'rxjs';
 import { SharedModule } from './shared/shared.module';
 import { GifsModule } from './gifs/gifs.module';
 import { HomeComponent } from './home/home.component';
+import { LoginModule } from './log/login.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
+    LoginModule,
     GifsModule
   ],
   providers: [],

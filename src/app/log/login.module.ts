@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 
 import { LoginComponent } from './login/login.component';
@@ -14,15 +15,18 @@ import { VerificarUsuarioComponent } from './verificar-usuario/verificar-usuario
     LoginComponent,
     RecuperarPasswordComponent,
     RegistrarUsuarioComponent,
-    VerificarUsuarioComponent
-
-    
+    VerificarUsuarioComponent    
   ],
   exports: [
+    LoginComponent,
+    RecuperarPasswordComponent,
+    RegistrarUsuarioComponent,
+    VerificarUsuarioComponent 
     
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class LoginModule { }
