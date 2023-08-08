@@ -6,10 +6,12 @@ import { VerificarUsuarioComponent } from './log/verificar-usuario/verificar-usu
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent },
   {path: 'registrar-usuario', component: RegistrarUsuarioComponent },
   {path: 'verificar-correo', component: VerificarUsuarioComponent },
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: '**', redirectTo: 'login', pathMatch: 'full'}
 ];
 
 @NgModule({
